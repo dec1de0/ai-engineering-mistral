@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mistral 7B Integration Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <p class="eyebrow">AI Engineering Portfolio</p>
+        <h1>Mistral 7B Integration Studio</h1>
+        <p class="subtitle">
+          A realistic product skeleton for integrating a quantized Mistral 7B model into a production-style stack.
+        </p>
+      </header>
+
+      <main class="card">
+        <form id="prompt-form" class="prompt-form">
+          <label for="prompt" class="label">Prompt</label>
+          <textarea
+            id="prompt"
+            name="prompt"
+            placeholder="Explain quantization in simple terms."
+            rows="6"
+            required
+          ></textarea>
+          <div class="actions">
+            <button type="submit" id="generate-btn">Generate</button>
+            <span id="status" class="status" aria-live="polite"></span>
+          </div>
+        </form>
+
+        <section class="response" aria-live="polite">
+          <div class="response-header">
+            <h2>Response</h2>
+            <span class="badge" id="response-badge">Idle</span>
+          </div>
+          <pre id="response-text">Your model output will appear here.</pre>
+          <p id="error-text" class="error"></p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Backend endpoint: <code>/generate</code></p>
+        <p>Designed for CPU-only, quantized inference workflows.</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

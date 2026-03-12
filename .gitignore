@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and caches
+*.log
+.pytest_cache/
+.cache/
+
+# Model artifacts
+models/
+*.gguf
+*.bin
+*.safetensors
