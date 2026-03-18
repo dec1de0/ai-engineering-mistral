@@ -19,8 +19,6 @@ Thumbs.db
 .cache/
 
 # Model artifacts
-models/
 *.gguf
 *.bin
 *.safetensors
-backend/models/*.gguf
